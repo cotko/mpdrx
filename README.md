@@ -5,7 +5,7 @@ Uses [mpd-api module](https://github.com/cotko/mpd-api) and exposes a few stream
 ### Usage
 
   ```
-  npm i / yarn add mpd-api
+  npm i / yarn add mpdrx
   ```
 
   ```js
