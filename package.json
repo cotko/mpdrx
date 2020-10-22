@@ -1,0 +1,21 @@
+{
+  "name": "mpdrx",
+  "version": "1.0.0",
+  "description": "MPD client events as stream",
+  "main": "lib/index.js",
+  "repository": "https://github.com/cotko/mpdrx",
+  "author": "Cotko <cotkocot@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "standard ./lib/**/*.js",
+    "lintfix": "standard ./lib/**/*.js --fix"
+  },
+  "dependencies": {
+    "debug": "^4.2.0",
+    "mpd-api": "*",
+    "rxjs": "^6.6.3"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
+}
