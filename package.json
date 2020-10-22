@@ -6,6 +6,12 @@
   "repository": "https://github.com/cotko/mpdrx",
   "author": "Cotko <cotkocot@gmail.com>",
   "license": "UNLICENSED",
+  "keywords": [
+    "mpd",
+    "mpd-api",
+    "music player daemon",
+    "rx reactive rxjs"
+  ],
   "scripts": {
     "lint": "standard ./lib/**/*.js",
     "lintfix": "standard ./lib/**/*.js --fix"
