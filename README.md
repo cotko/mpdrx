@@ -16,6 +16,7 @@ Uses [mpd-api module](https://github.com/cotko/mpd-api) and exposes a few stream
     client, // reference to 'mpd-api' client
     event$,
     status$,
+    state$,
     currentSong$,
     currentSongUnique$,
     playlists$,
@@ -28,10 +29,12 @@ Uses [mpd-api module](https://github.com/cotko/mpd-api) and exposes a few stream
     neighbor$,
     mount$,
     output$,
+    playback$,
   } = streams
 
   event$.subscribe(log('event'))
   status$.subscribe(log('status'))
+  state$.subscribe(log('state'))
 
   // unique by `songid`
   currentSong$.subscribe(log('currentSong'))
@@ -49,6 +52,8 @@ Uses [mpd-api module](https://github.com/cotko/mpd-api) and exposes a few stream
   neighbor$.subscribe(log('neighbor'))
   mount$.subscribe(log('mount'))
   output$.subscribe(log('output'))
+
+  playback$.subscribe(log('song playback'))
 
   setTimeout(async () => {
     console.log('disconnecting...')
